@@ -9,12 +9,28 @@ namespace FilmDude2.Controllers
 {
     public class CustomersController : Controller
     {
-        // Create an IEnumerable which will store a list of type Customer, then instantiate the lists items
-        private IEnumerable<Customer> GetCustomers() => new List<Customer>
+
+        // private var of type ApplicationDbContext
+        private ApplicationDbContext _context;
+
+        public CustomersController()
         {
-            new Customer{Name ="Ferdinand MicroTank", Id=1},
-            new Customer{Name ="Jiminy Winklespit", Id =2}
-        };
+          // instantiate ApplicationDbContext class
+            _context = new ApplicationDbContext();
+        }
+
+        // I won't begin to pretend I know what this is, I think it's something to do with closing the _context when it's not being used.
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
+
+        // Create an IEnumerable which will store a list of type Customer, which is populated from the DB Customer record
+        private IEnumerable<Customer> GetCustomers()
+        {
+            return _context.Customers.ToList();   
+        }
 
         // GET: Customers
         public ActionResult Index()
