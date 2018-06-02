@@ -1,0 +1,28 @@
+﻿@model FilmDude2.ViewModels.RandomViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* conditional checks if movie has greater than or equal to 5 customers, if so it sets the class popular, which can have its own special/dynamic style*@
+
+@{
+    var pop = Model.Customer.Count >= 5 ? "popular" : null;
+}
+
+<h2 class="@pop">@Model.Movie.Name</h2>
+
+@if (Model.Customer.Count == 0)
+{
+    <p>This Movie has never been rented before</p>
+}
+else
+{
+    <ul>
+        @foreach (var customer in Model.Customer)
+        {
+            <li>@customer.Name</li>
+        }
+    </ul>
+}
+<!-- Declare the movies model with "at" declaration !-->

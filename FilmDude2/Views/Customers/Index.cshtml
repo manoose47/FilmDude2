@@ -1,0 +1,23 @@
+﻿@model IEnumerable<FilmDude2.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customers</h2>
+@if (!Model.Any())
+{
+    <p>We don't have any customers</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        @{ foreach (var c in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(c.Name, "Details", "Customers", new { id = c.Id }, null)</td>
+                </tr>
+            }
+        }
+    </table>
+}
