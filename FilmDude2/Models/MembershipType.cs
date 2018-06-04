@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace FilmDude2.Models
 {
@@ -11,5 +12,8 @@ namespace FilmDude2.Models
         public short SignupFee { get; set; }
         public byte DurationInMonths { get; set; }
         public byte DiscountRate { get; set; }
+        [Required]
+        [StringLength(30)]
+        public string Name { get; set; }
     }
 }

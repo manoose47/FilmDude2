@@ -16,5 +16,6 @@ namespace FilmDude2.Models
         public bool IsSubscribedToNewsletter { get; set; }
         public MembershipType MembershipType { get; set; }
         public byte MembershipTypeId { get; set; }
+        public DateTime? DateOfBirth { get; set; }
     }
 }

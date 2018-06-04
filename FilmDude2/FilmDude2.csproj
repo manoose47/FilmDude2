@@ -217,6 +217,30 @@
     <Compile Include="Migrations\201806022108374_AnnotateCustomerAndMovies.Designer.cs">
       <DependentUpon>201806022108374_AnnotateCustomerAndMovies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806041604519_AddNametoMembership.cs" />
+    <Compile Include="Migrations\201806041604519_AddNametoMembership.Designer.cs">
+      <DependentUpon>201806041604519_AddNametoMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806041608150_PopulateMembershipNames.cs" />
+    <Compile Include="Migrations\201806041608150_PopulateMembershipNames.Designer.cs">
+      <DependentUpon>201806041608150_PopulateMembershipNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806041612257_PopulateMembershipNames1.cs" />
+    <Compile Include="Migrations\201806041612257_PopulateMembershipNames1.Designer.cs">
+      <DependentUpon>201806041612257_PopulateMembershipNames1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806041614292_PopulateMembershipNamesAgain.cs" />
+    <Compile Include="Migrations\201806041614292_PopulateMembershipNamesAgain.Designer.cs">
+      <DependentUpon>201806041614292_PopulateMembershipNamesAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806041618447_PopulateMembershipNamesAgain1.cs" />
+    <Compile Include="Migrations\201806041618447_PopulateMembershipNamesAgain1.Designer.cs">
+      <DependentUpon>201806041618447_PopulateMembershipNamesAgain1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806041630587_AddDob2Customer.cs" />
+    <Compile Include="Migrations\201806041630587_AddDob2Customer.Designer.cs">
+      <DependentUpon>201806041630587_AddDob2Customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -322,6 +346,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806022108374_AnnotateCustomerAndMovies.resx">
       <DependentUpon>201806022108374_AnnotateCustomerAndMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806041604519_AddNametoMembership.resx">
+      <DependentUpon>201806041604519_AddNametoMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806041608150_PopulateMembershipNames.resx">
+      <DependentUpon>201806041608150_PopulateMembershipNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806041612257_PopulateMembershipNames1.resx">
+      <DependentUpon>201806041612257_PopulateMembershipNames1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806041614292_PopulateMembershipNamesAgain.resx">
+      <DependentUpon>201806041614292_PopulateMembershipNamesAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806041618447_PopulateMembershipNamesAgain1.resx">
+      <DependentUpon>201806041618447_PopulateMembershipNamesAgain1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806041630587_AddDob2Customer.resx">
+      <DependentUpon>201806041630587_AddDob2Customer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
